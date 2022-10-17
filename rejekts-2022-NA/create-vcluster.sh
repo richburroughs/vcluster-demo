@@ -32,15 +32,23 @@ clear
 
 # put your demo awesomeness here
 
+pe "kubectl get namespaces"
 
-pe ""
-asciinema rec create-vcluster.cast
+pe "vcluster create rejekts"
 
 pe "kubectl get namespaces"
 
-#pe "vcluster create rejekts"
+pe "kubectl create namespace nginx"
 
-#pe "kubectl get namespaces"
+pe "kubectl create deployment nginx --image=nginx --replicas=2 -n nginx"
+
+pe "kubectl get pods -n nginx"
+
+pe "vcluster disconnect"
+
+pe "kubectl get namespaces"
+
+pe "kubectl get pods -A"
 
 exit
 
