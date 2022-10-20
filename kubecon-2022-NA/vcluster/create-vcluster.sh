@@ -40,9 +40,11 @@ pe "kubectl get namespaces"
 
 pe "kubectl get pods -n kube-system"
 
-pe "vcluster disconect"
+pe "vcluster disconnect"
 
 pe "kubectl get pods -n kube-system"
+
+pe "kubectl get pods -n kubecon"
 
 # show a prompt so as not to reveal our true nature after
 # the demo has concluded
