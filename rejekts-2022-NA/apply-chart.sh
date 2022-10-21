@@ -38,7 +38,7 @@ pe "vcluster create rejekts -f ./certmanager-values.yaml"
 
 pe "kubectl get namespaces"
 
-pe "kubectl get pods -n certmanager"
+pe "kubectl get pods -n cert-manager"
 
 # show a prompt so as not to reveal our true nature after
 # the demo has concluded
