@@ -44,7 +44,7 @@ pe "vcluster disconnect"
 
 pe "kubectl get pods -n kube-system"
 
-pe "kubectl get pods -n kubecon"
+pe "kubectl get pods -n vcluster-kubecon"
 
 # show a prompt so as not to reveal our true nature after
 # the demo has concluded
