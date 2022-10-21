@@ -1,0 +1,13 @@
+init:
+  helm:
+    # public chart
+    - chart:
+        name: cert-manager
+        repo: https://charts.jetstack.io
+        version: v1.8.0
+      # optional field
+      values: |-
+        installCRDs: true
+      release:
+        name: cert-manager
+        namespace: cert-manager
