@@ -48,7 +48,7 @@ pe "vcluster disconnect"
 
 pe "kubectl get namespaces"
 
-pe "kubectl get pods -A"
+pe "kubectl get pods -n vcluster-rejekts"
 
 # show a prompt so as not to reveal our true nature after
 # the demo has concluded
